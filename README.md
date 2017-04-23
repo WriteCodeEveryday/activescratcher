@@ -20,8 +20,7 @@ You have everything you need to work in a brand new project, you've bundle insta
 
 \* record scratch \*
 
-![A Record Scratch]
-(https://19818-presscdn-pagely.netdna-ssl.com/wp-content/uploads/934/35/ae736cf59a057c35818d955fbd3ab0b9.jpg)
+![A Record Scratch](https://19818-presscdn-pagely.netdna-ssl.com/wp-content/uploads/934/35/ae736cf59a057c35818d955fbd3ab0b9.jpg)
 
 \* freeze frame \*
 
