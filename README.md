@@ -24,7 +24,7 @@ You have everything you need to work in a brand new project, you've bundle insta
 
 \* freeze frame \*
 
-Yep. Someone (or someones) forgot to add seed data to your database. In effect, you now have to add and link models together.
+Someone forgot to add seed data to your project. In effect, you now have to add and link models together.
 
 Insert ActiveScratcher (because we scratch the shit out of ActiveRecord).
 
