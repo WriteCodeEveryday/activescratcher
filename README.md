@@ -1,3 +1,5 @@
+Warning: This gem is in active development and currently does absolutely nothing.
+
 # ActiveScratcher
 ActiveRecord-based gem to get you from 'git clone' to 'rails s'
 
