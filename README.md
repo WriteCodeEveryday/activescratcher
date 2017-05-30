@@ -28,7 +28,7 @@ You have everything you need to work in a brand new project, you've bundle insta
 
 Someone forgot to add seed data to your project. In effect, you now have to add and link models together.
 
-Insert ActiveScratcher (because we scratch the shit out of ActiveRecord).
+Insert ActiveScratcher (because we scratch the sh*t out of ActiveRecord).
 
 ```ruby
 # Start the rails console
