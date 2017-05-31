@@ -68,10 +68,47 @@ module ActiveScratcher
     
     private
       def create_reqs(options={})
-        target_table = options[:table] || puts "Skipping missing table"; return
+        target_table = options[:table]
         target_children = options[:children] || 1
         
-        puts "Modifying table #{target_table}. Adding #{target_children} dependencies"
+        if !target_table.present?
+          puts "Missing table."
+          return nil
+        end
+        
+        if target_table.first.present?
+          puts "Table already exists"
+        else
+          puts "Modifying table #{target_table}. Adding #{target_children} dependencies"
+          
+          # Database Types: [:primary_key, :string, :text, :integer, :float, :decimal, :datetime, :time, :date, :binary, :boolean]
+          holder = DateTime.now # Just in case we find a "created_at" or "updated_at"
+          while target_table.count < target_children
+            target_table.columns.each do |item|
+              name = item.name
+              type = item.type.to_s
+              
+              case type
+                when 'primary_key', 'integer'
+                  # primary_key, integer - Watch out for "_id" and "id".
+                when 'float', 'decimal'
+                  # float, decimal - Just pop a number in there.
+                when 'string', 'text'
+                  # string, text - Use best choice with Faker.
+                when 'datetime'
+                  # datetime - Watch out for "created_at" and "updated_at". Pop a random one for anything else.
+                when 'date'
+                  # date - Pop a random date.
+                when 'time'
+                  # time - Pop a random time.
+                when 'boolean'
+                  # boolean - True or False, just flip a coin.
+                when 'binary'
+                  # binary - Generate a binary blob.
+              end
+            end
+          end
+        end
       end
   end
 end
