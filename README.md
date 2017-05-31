@@ -1,3 +1,5 @@
+Warning: This gem is in active development and currently does absolutely nothing.
+
 # ActiveScratcher
 ActiveRecord-based gem to get you from 'git clone' to 'rails s'
 
@@ -20,14 +22,13 @@ You have everything you need to work in a brand new project, you've bundle insta
 
 \* record scratch \*
 
-![A Record Scratch]
-(https://19818-presscdn-pagely.netdna-ssl.com/wp-content/uploads/934/35/ae736cf59a057c35818d955fbd3ab0b9.jpg)
+![A Record Scratch](https://19818-presscdn-pagely.netdna-ssl.com/wp-content/uploads/934/35/ae736cf59a057c35818d955fbd3ab0b9.jpg)
 
 \* freeze frame \*
 
-Yep. Someone (or someones) forgot to add seed data to your database. In effect, you now have to add and link models together.
+Someone forgot to add seed data to your project. In effect, you now have to add and link models together.
 
-Insert ActiveScratcher (because we scratch the shit out of ActiveRecord).
+Insert ActiveScratcher (because we scratch the sh*t out of ActiveRecord).
 
 ```ruby
 # Start the rails console
